@@ -88,7 +88,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "electronmon ."
   },
   "keywords": [],
   "author": "matheus henrique",
