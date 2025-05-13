@@ -1,17 +1,16 @@
-const{app, browserwindow} =  require('electron'); 267 (gzipped: 200)
+const { app, BrowserWindow } = require('electron');
 
 function CreateWindow() {
 
-    const window = newbrowserwindow({
-    width: 800,
-    
-    height: 600,
-}
- 
-)
-window.loadfile('index.html');
+    const window = new BrowserWindow({
+        width: 800,
+        height: 600,
+    })
 
-app.whenReady(),then(() => {
+    window.loadFile("src/pages/index.html")
+
+}
+
+app.whenReady().then(() => {
     CreateWindow();
 })
-}
